@@ -1,0 +1,77 @@
+.main {
+    background-color: var(--background-color);
+    padding: 1.5rem 1rem;
+}
+
+.search-bar-plus-region-dropdown-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* margin-bottom: 2.5rem; */
+}
+
+.search-bar {
+    background-color: var(--elements-bg-color);
+    box-shadow: 0 0 1px 1px var(--box-shadow-color);
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0.85rem 2rem;
+}
+
+.search-icon {
+    color: var(--search-icon-color);
+}
+
+input[name="countryInput"] {
+    background-color: transparent;
+    border: none;
+    color: var(--input-text-color);
+    font-family: inherit;
+    outline: none;
+    width: 100%;
+}
+
+input[name="countryInput"]::placeholder {
+    color: var(--input-text-color);
+}
+
+.region-dropdown {
+    font-weight: 500;
+    width: 12rem;
+}
+
+.country-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 2rem;
+}
+
+
+@media screen and (min-width:1280px) {
+    .main {
+        padding: 2.5rem 6rem;
+    }
+
+    .search-bar-plus-region-dropdown-box {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .search-bar {
+        width: 25rem;
+    }
+
+    .country-card-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: stretch;
+        gap: 4rem;
+        padding: 4rem 0 0;
+    }
+}

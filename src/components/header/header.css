@@ -1,0 +1,42 @@
+.header{
+    background-color: var(--elements-bg-color);
+    border-bottom: 2px solid var(--box-shadow-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem;
+}
+
+.heading-text{
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.theme-toggle-box{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.theme-text{
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    width:5rem;
+}
+
+@media screen and (min-width:1280px) {
+    .header{
+        padding: 1.5rem 6rem;
+    }
+
+    .heading-text{
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    
+    .theme-text{
+        font-size: 1.15rem;
+        width:6rem;
+    }
+}

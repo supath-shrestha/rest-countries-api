@@ -1,0 +1,8 @@
+.text {
+    font-weight: 700;
+}
+
+.value {
+    color: var(--data-text-color);
+    font-weight: 400;
+}

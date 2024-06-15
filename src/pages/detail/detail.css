@@ -1,0 +1,27 @@
+.detail-page-main {
+    background-color: var(--background-color);
+    padding: 2.5rem 2rem;
+}
+
+.back-btn{
+    background-color: var(--elements-bg-color);
+    border-radius: 0.25rem;
+    box-shadow: 0 0 2px 2px var(--box-shadow-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.25rem 1.25rem;
+    width: max-content;
+    margin-bottom: 4rem;
+}
+
+.left-arrow{
+    color: var(--left-arrow-color);
+}
+
+@media screen and (min-width:1280px) {
+    .detail-page-main {
+        padding: 3rem 6rem;
+    }
+}

@@ -1,0 +1,100 @@
+.detail-card,
+.detail-card .country-details-wrapper,
+.detail-card .country-details-box {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+.detail-card .country-details-top-box,
+.detail-card .country-details-bottom-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.detail-card .common-name {
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin-bottom: -1rem;
+}
+
+.border-countries-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.border-countries-text {
+    font-weight: 700;
+}
+
+.border-countries-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1rem;
+}
+
+.border-country {
+    background-color: var(--elements-bg-color);
+    border-radius: 0.25rem;
+    box-shadow: 0 0 2px 2px var(--box-shadow-color);
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+
+    font-size: 0.85rem;
+    padding-block: 0.35rem;
+    text-align: center;
+    word-break: break-word;
+    width: 100%;
+}
+
+@media screen and (min-width:1280px) {
+    .detail-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .detail-card .country-flag {
+        width: 35rem;
+        height: 25rem;
+    }
+
+    .detail-card .common-name {
+        font-size: 2rem;
+    }
+
+    .detail-card .country-details-wrapper {
+        align-self: center;
+        flex-grow: 1;
+    }
+
+    .detail-card .country-details-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .border-countries-box {
+        flex-direction: row;
+    }
+
+    .border-countries-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .border-country {
+        padding: 0.35rem 2rem;
+        width: auto;
+        transition: scale 0.25s linear;
+    }
+
+    .border-country:hover{
+        scale: 1.1;
+    }
+}

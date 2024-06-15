@@ -1,0 +1,38 @@
+.card {
+    border-radius: 0.25rem;
+    box-shadow: 0 0 2px 2px var(--box-shadow-color);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    transition: scale 0.25s linear;
+    width: 100%;
+}
+
+.card .country-flag {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    width: 100%;
+    aspect-ratio: 1/0.65;
+}
+
+.card .country-details-box {
+    background-color: var(--elements-bg-color);
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    display: flex;
+    gap: 0.35rem;
+    flex-direction: column;
+    padding: 1rem 1rem 3rem;
+}
+
+.card .common-name {
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width:1280px) {
+    .card:hover {
+        scale: 1.1;
+    }
+}

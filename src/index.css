@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&display=swap');
+
+:root[data-theme="light"] {
+  /* light mode  */
+  --elements-bg-color: hsl(0, 0%, 100%);
+  --background-color: hsl(0, 0%, 98%);
+
+  --text-color: hsl(200, 15%, 8%);
+  --input-text-color: rgb(186, 184, 184);
+  --data-text-color:rgb(30, 29, 29);
+
+
+  --search-icon-color: rgb(190, 190, 190);
+  --box-shadow-color: rgb(237, 237, 237);
+  --left-arrow-color:rgb(48, 47, 47);
+
+
+  /* --input-text-color:hsl(0, 0%, 52%); */
+}
+
+:root[data-theme="dark"] {
+  /* dark mode  */
+  --elements-bg-color: hsl(209, 23%, 22%);
+  --background-color: hsl(207, 26%, 17%);
+
+  --text-color: hsl(0, 0%, 100%);
+  --input-text-color: hsl(0, 8%, 92%);
+  --data-text-color:rgb(221, 221, 221);
+
+  --search-icon-color: rgb(255, 255, 255);
+  --box-shadow-color: transparent;
+  --left-arrow-color:hsl(0, 0%, 100%) ;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Nunito Sans", sans-serif;
+  min-height: 100svh;
+}
